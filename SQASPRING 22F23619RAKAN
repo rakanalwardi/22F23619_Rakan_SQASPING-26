@@ -7,8 +7,10 @@ int main() {
     bool isPremium = false;
 
     cout << "--- Account and Profile Menu ---" << endl;
-    cout << "1. View Profile Type\n2. Upgrade Account\n";
-    cout << "Enter your choice (1 or 2): ";
+    cout << "1. View Profile Type\n";
+    cout << "2. Upgrade Account\n";
+    cout << "3. Contact Support\n";
+    cout << "Enter your choice (1, 2 or 3): ";
     cin >> choice;
 
     // Node 1: Entry into the switch block
@@ -31,6 +33,9 @@ int main() {
                 cout << "Upgrade failed. Insufficient balance." << endl; // Node 8
             }
             break; // Node 9: Break out to end
+case 3:
+    cout << "Contact support page opened." << endl;
+    break;
 
         default:
             cout << "Invalid choice selected." << endl; // Node 10
