@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int choice;
-    int accountBalance = 150; // Example profile data
+    int accountBalance = 150;
     bool isPremium = false;
 
     cout << "--- Account and Profile Menu ---" << endl;
@@ -11,33 +11,29 @@ int main() {
     cout << "Enter your choice (1 or 2): ";
     cin >> choice;
 
-    // Node 1: Entry into the switch block
     switch (choice) {
-        case 1: 
-            // Node 2: Check premium status
+        case 1:
             if (isPremium) {
-                cout << "Profile Status: Premium Member" << endl; // Node 3
+                cout << "Profile Status: Premium Member" << endl;
             } else {
-                cout << "Profile Status: Standard Member" << endl; // Node 4
+                cout << "Profile Status: Standard Member" << endl;
             }
-            break; // Node 5: Break out to end
+            break;
 
         case 2:
-            // Node 6: Check upgrade eligibility based on balance
             if (accountBalance >= 100) {
                 isPremium = true;
-                cout << "Upgrade successful! Welcome to Premium." << endl; // Node 7
+                cout << "Upgrade successful! Welcome to Premium." << endl;
             } else {
-                cout << "Upgrade failed. Insufficient balance." << endl; // Node 8
+                cout << "Upgrade failed. Insufficient balance." << endl;
             }
-            break; // Node 9: Break out to end
+            break;
 
         default:
-            cout << "Invalid choice selected." << endl; // Node 10
+            cout << "Invalid choice selected." << endl;
             break;
     }
 
-    // Node 11: End of program
-    cout << "Thank you for using Profile Management." << endl; 
+    cout << "Thank you for using Profile Management." << endl;
     return 0;
 }
